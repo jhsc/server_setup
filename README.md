@@ -1,5 +1,4 @@
 # Ubuntu VPS setup (17.0)
-===
 
 Here are some base guidelines I follow when setting up a new VPS manually without configuration management. These steps if anything make the system more secure overall and provide a good starting point from which you can setup the services/software’s required for the purpose of the VPS.
 
