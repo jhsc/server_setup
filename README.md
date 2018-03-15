@@ -90,3 +90,8 @@ To continue here, open the SSH port number you chose earlier on by replacing the
 sudo ufw allow 3267/tcp
 sudo ufw enable
 ```
+
+Since UFW reads from the `/etc/services` file you can add any of the service names listed in there.
+```bash
+sudo less /etc/services
+```
