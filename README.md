@@ -138,3 +138,14 @@ Add user to docker group
 sudo usermod -aG docker $USER
 ```
 Log out and back, and run hello-world again.
+
+## Configure Docker to start on boot
+Enable docker service to when system boots.
+```
+sudo systemctl enable docker
+```
+
+To disable this behavior, use `disable` instead.
+```
+sudo systemctl disable docker
+```
