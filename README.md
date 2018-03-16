@@ -149,3 +149,29 @@ To disable this behavior, use `disable` instead.
 ```
 sudo systemctl disable docker
 ```
+
+## Docker Compose
+Check [current release] and if necessary, update it in the command below:
+```bash
+sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Then we'll verify that the installation was successful by checking the version:
+```bash
+docker-compose --version
+```
+
+Extra:
+```bash
+# Install docker-cleanup command
+cd /tmp
+git clone https://gist.github.com/76b450a0c986e576e98b.git
+cd 76b450a0c986e576e98b
+sudo mv docker-cleanup /usr/local/bin/docker-cleanup
+sudo chmod +x /usr/local/bin/docker-cleanup
+```
+
+
+[current release]: https://github.com/docker/compose/releases
